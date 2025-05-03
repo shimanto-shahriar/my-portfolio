@@ -96,8 +96,19 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add subtle shadow for blending */
     clip-path: circle(50% at 50% 50%); /* Ensure the image is clipped to a perfect circle */
   }
+
+  .overlay-image {
+    position: absolute; /* Lets you move it freely */
+  width: 500px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  top: 250px; /* Distance from the top of the viewport */
+  left: 1185px; /* Distance from the left */
+  filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.2));
+  position: absolute;
+  z-index: 1;
+}
   
-  .hero h1, .hero h2, .hero p {
+.hero h1, .hero h2, .hero p {
     letter-spacing: 0.1rem;
     color: #fff; /* Change text color to white */
   }
