@@ -19,8 +19,9 @@
   /* Navigation */
   nav {
     background: #1E1E1E; /* Bright green with 35% opacity */
-    padding: 2rem;
-    padding-right: 7.5rem;
+    padding-top: 3.2rem;
+    padding-right: 14rem;
+
 
   }
   
@@ -34,8 +35,11 @@
   nav a {
     color: white;
     text-decoration: none;
-    font-size: 0.8rem;
-    
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    letter-spacing: 0.1rem;
+    font-family: 'Poppins', sans-serif; /* Restore the previous font */
+    font-weight: 0;
   }
   
   nav a:hover {
@@ -44,26 +48,57 @@
 
   /* Adjust the CV download button to align with other navigation links */
   nav a.cta-button {
-      padding: 0.5rem 1rem; /* Make the button smaller */
-      font-size: 0.8rem; /* Match font size with other links */
-      border-radius: 3px; /* Slightly rounded corners */
+      padding: 0.5rem 1.3rem; /* Make the button smaller */
+      font-size: 1.3rem; /* Match font size with other links */
+      border-radius: 4px; /* Slightly rounded corners */
       display: inline-block; /* Ensure it aligns inline */
       margin: 0; /* Remove extra margin */
+      letter-spacing: 0.1rem; /* Adjust letter spacing */
   }
 
   nav a.cta-button:hover {
       background: rgba(0, 253, 0, 0.5); /* Keep hover effect consistent */
+      color:rgba(0, 0, 0, 0.35);
   }
   
   /* Hero Section */
   .hero {
-    
-    padding: 8rem 2rem;
+    display: flex;
+    flex-direction: row; /* Divide into left and right sections */
+    align-items: center; /* Center content vertically */
+    justify-content: space-between; /* Add space between left and right sections */
+    padding: 8rem 14rem;
     background: transparent; /* Remove light gray background */
     min-height: 100vh;
   }
+
+  .hero-left {
+    flex: 1; /* Take up half the space */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left */
+  }
+
+  .hero-right {
+    flex: 1; /* Take up half the space */
+    display: flex;
+    justify-content: center; /* Center the image */
+    align-items: center;
+  }
+
+  .hero-right img {
+    background-color: #fff;
+    width: 500px; /* Keep the larger image size */
+    height: 500px; /* Keep the larger image size */
+    border-radius: 50%; /* Keep the image circular */
+    object-fit: cover; /* Ensure the image fits within the circle */
+    border: 3px solid rgba(0, 253, 0, 0.75); /* Thin green border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add subtle shadow for blending */
+    clip-path: circle(50% at 50% 50%); /* Ensure the image is clipped to a perfect circle */
+  }
   
   .hero h1, .hero h2, .hero p {
+    letter-spacing: 0.1rem;
     color: #fff; /* Change text color to white */
   }
   
@@ -78,7 +113,7 @@
   }
   
   .hero p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-bottom: 3rem;
   }
 
@@ -100,6 +135,7 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s;
+    letter-spacing: 0.1rem;
   }
 
   button:hover, .cta-button:hover {
@@ -108,6 +144,15 @@
 
   .cta-button {
     text-decoration: none; /* Remove underline */
+    margin: 0; /* Remove any default margin */
+    display: inline-block; /* Ensure it aligns inline */
+    align-self: flex-start; /* Explicitly align the button to the left */
+  }
+
+  .hero .cta-button {
+    margin: 0; /* Remove any default margin */
+    align-self: flex-start; /* Explicitly align the button to the left */
+    text-align: left; /* Ensure text aligns left */
   }
 
 
