@@ -16,6 +16,7 @@ Welcome to my portfolio! This repository showcases my projects, skills, and prof
 ## 📂 Project Structure
 ```plaintext
 portfolio/
+├── styles.css      # Styling for webpage
 ├── images/         # Images, fonts, or styles
 ├── index.html      # Main page
 ├── README.md       # This file
