@@ -11,16 +11,12 @@ Welcome to my portfolio! This repository showcases my projects, skills, and prof
 
 ## 🛠️ Technologies Used
 - Frontend: HTML/CSS, JavaScript, etc.
-- Backend: Formspree
 - Tools: Git, VS Code, Figma, etc.
 
 ## 📂 Project Structure
 ```plaintext
 portfolio/
-├── contact.html    # Contact page (Extra)
-├── services.html   # Contains services for showcase
-├── projects.html   # Contains projects for showcase
-├── assets/         # Images, fonts, or styles
+├── images/         # Images, fonts, or styles
 ├── index.html      # Main page
 ├── README.md       # This file
 └── LICENSE         # License file
