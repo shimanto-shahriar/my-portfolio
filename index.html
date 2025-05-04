@@ -1,190 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
     
-  <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#resume" class="cta-button" aria-label="Download CV" id="cv_download_button">Download CV</a></li>
-    </ul>
-  </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/fc4e67429f.js" crossorigin="anonymous"></script>
+    <title>Shimanto Shahriar Momin | Portfolio</title>
+</head>
 
-  <main>
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-      <div class="hero-left">
-        <h2>Hi I am </h2>
-        <h2>Shimanto Shahriar</h2>
-        <h1>Web developer</h1>
-        <h1>& Designer</h1>
-        <p class="tagline">I build websites that don't just work-they delight. With code as my foundation and design as my canvas, I craft digital experiences that marry razor-sharp functionality with bold aesthetics.</p>
-        <a href="services.html" class="cta-button" aria-label="Navigate to Services Section">Hire Me</a>
-      </div>
-      <img class="overlay-image" src="images/hero_section.png" alt="Hero Section Image" />
-      <div class="hero-right">
-          <img class="base-image" src="images/hero_section.png" alt="Hero Section Image" />
+<body>
+
+    <div id="header">
+        <div id="container">
+            <nav>
+                <img src="images/logo.png" alt="Logo" id="logo">
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer & Designer</p>
+                <h1>Hi I am <span>Shimanto Shahriar</span><br> from Bangladesh</h1>
+            </div>
         </div>
-      </div>
+    </div>
 
-    </section>
+    
 
-    <!-- About Me -->
-    <section class="about" id="about">
-      <h2>About Me</h2>
-      <div class="about-me" id="about">
-        <p> I'm a Data Science student with a brain wired equally for logic and aesthetics. Growing up glued to a computer screen, I discovered early that technology isn’t just a tool—it’s a canvas. Today, I merge my love for coding and design to build experiences that are as functional as they are beautiful.</p>
-        <h3>Front End</h3>
-        <p>HTML, CSS, JavaScript, React</p>
-        <h3>Back End</h3>
-        <p>Python, SQL, Django</p>
-        <h3>Web Design</h3> 
-        <p>Figma, Adobe Suite, Canva</p>
-        <h3>Data Science</h3>
-        <p>Python, SQL, Tableau</p>
-      </div>
-    </section>
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="User Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-titles">About Me</h1>
+                    <p class="about-text">I'm a web developer and designer with a passion for creating
+                        beautiful and functional websites. I have experience in HTML,
+                        CSS, JavaScript, and various frameworks.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web inferfaces</li>
+                            <li><span>Web Development</span><br>Web app development</li>
+                            <li><span>Data Analysis</span><br>Data analysis and visualization</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>UI/UX Design training</li>
+                            <li><span>2019 - 2021</span><br>Web development training</li>
+                            <li><span>2015 - 2019</span><br>Data analysis and visualization traning</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2010</span><br>SSC from FRII</li>
+                            <li><span>2012</span><br>HSC from BFSD</li>
+                            <li><span>2014</span><br>BSDS from UIU</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <!-- Services -->
-    <section class="services" id="services">
-      <h2>Services</h2>
-      <div class="services-grid">
-        <div class="service-card">
-          <i class="fas fa-code"></i>
-          <h3>Web Development</h3>
-          <p>Building responsive and user-friendly websites.</p>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-titles">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Designing and building websites using HTML, CSS, and JavaScript.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Creating visually appealing and user-friendly interfaces.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Data Analysis</h2>
+                    <p>Analyzing and visualizing data to gain insights.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
         </div>
-        <div class="service-card">
-          <i class="fas fa-paint-brush"></i>
-          <h3>UI/UX Design</h3>
-          <p>Creating intuitive and engaging user experiences.</p>
-        </div>
-        <div class="service-card">
-          <i class="fas fa-database"></i>
-          <h3>Data Analysis</h3>
-          <p>Transforming data into actionable insights.</p>
-        </div>
-      </div>
-    </section>  
-
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-      <h2>My Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <img src="assets/images/project1.jpg" alt="Screenshot of Project 1">
-          <h3>Project Title</h3>
-          <p>A brief description of the project.</p>
-          <a href="https://github.com/yourusername/project1" target="_blank" aria-label="View Project 1 on GitHub">View on GitHub</a>
-        </div>
-        <!-- Add more project cards here -->
-      </div>
-    </section>  
-
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonials">
-      <h2>Testimonials</h2>
-      <div class="testimonial-grid">
-        <div class="testimonial-card">
-          <p>"Shimanto is a talented developer who delivered beyond our expectations!"</p>
-          <h4>- Client Name</h4>
-        </div>
-        <div class="testimonial-card">
-          <p>"Working with Shimanto was a pleasure. His designs are top-notch!"</p>
-          <h4>- Another Client</h4>
-        </div>
-        <div class="testimonial-card">
-          <p>"Shimanto's attention to detail and creativity are unmatched."</p>
-          <h4>- Happy Customer</h4>
-        </div>
-        <div class="testimonial-card">
-          <p>"Shimanto's attention to detail and creativity are unmatched."</p>
-          <h4>- Happy Customer</h4>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-      <h2>Get in Touch</h2>
-      <div class="contact-container">
-        <!-- Contact Info -->
-        <div class="contact-info">
-          <div class="info-card">
-            <i class="fas fa-envelope"></i>
-            <h3>Email</h3>
-            <p>shimantoshahriar7@gmail.com</p>
-          </div>
-          <div class="info-card">
-            <i class="fas fa-phone"></i>
-            <h3>Phone</h3>
-            <p>+880 1727-291844</p>
-          </div>
-          <!-- Social Links -->
-        </div>
-
-        <!-- Contact Form -->
-        <form class="contact-form" id="contactForm">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-          <button type="submit" class="cta-button">Submit</button>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <div class="footer-content">
-      <!-- Navigation Links -->
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-
-      <!-- Social Links -->
-      <div class="social-links">
-        <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </div>
-      
-      <!-- Copyright Text -->
-      <p class="copyright">&copy; <span id="currentYear"></span> Shimanto Shahriar. All rights reserved.</p>
     </div>
-  </footer>
-  <script src="assets/js/script.js"></script>
+
+
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-titles">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="Portfolio 1">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Developed a social media application using React and Node.js.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="Portfolio 2">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Developed a music application using React and Node.js.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="Portfolio 3">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Developed a online shopping application using React and Node.js.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+
+<!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>shimantoshahriar6@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+8801727291844</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form >
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Shimanto Shahriar | All rights reserved</p>
+        </div>
+    </div>
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+
+
 </body>
+
 </html>
