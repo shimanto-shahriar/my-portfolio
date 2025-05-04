@@ -35,13 +35,13 @@ nav {
 }
 
 .logo {
-    width: 140px;
+    width: 15%;
 }
 
 nav ul li {
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 40px 20px;
 }
 
 nav ul li a {
@@ -81,9 +81,10 @@ nav ul li a:hover::after {
     letter-spacing: .1rem;
 }
 
-.header-text h1 span {
+.header-text p span {
     color: #00ff00c0;
     letter-spacing: .1rem;
+    font-size: 40px;
 }
 
 
@@ -403,18 +404,24 @@ nav .fa-solid {
         background-image: url(images/phone-background.png);
     }
     .header-text {
-        margin-top: 100%;
+        margin-top: 40%;
         font-size: 16px;
     }
     .header-text h1 {
         font-size: 30px;
+        margin-top: 420px;
     }
+
+    nav .logo {
+        width: 90%;
+    }
+
     nav .fa-solid {
         display: block;
         font-size: 25px;
     }
     nav ul{
-        background: #ff004f;
+        background: #008300;
         position: fixed;
         top: 0;
         right: -200px;
@@ -428,6 +435,14 @@ nav .fa-solid {
         display: block;
         margin: 25px;
     }
+
+    nav ul li a {
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: .1rem;
+        color:#fff;
+    }
+
     nav ul .fa-solid {
         position: absolute;
         top: 25px;
