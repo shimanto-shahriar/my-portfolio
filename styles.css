@@ -381,11 +381,12 @@ form .btn2 {
 .copyright {
     text-align: center;
     padding: 25px 0;
-    background: #262626;
+    background: #0d0d0d;
     color: #ababab;
     width: 100%;
     font-weight: 300;
     margin-top: 20px;
+    letter-spacing: .1rem;
 }
 
 .copyright i {
